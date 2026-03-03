@@ -74,8 +74,12 @@ The Power BI dashboard consists of 3 pages:
 **Overview Page**
 ![Overview](StockRadar/Overview%20DashBoard.png)
 
+
+
 **Stock Deep Dive**
 ![Stock Deep Dive](StockRadar/Stock%20Deep%20Dive%20DashBoard.png)
+
+
 
 **Deep Analysis**
 ![Deep Analysis](StockRadar/Deep%20Analysis%20DashBoard.png)
