@@ -7,7 +7,7 @@ This document explains every key decision made throughout the project, including
 ## 1. Data Collection
 
 ### Why 30 large tech companies?
-We chose 30 well-known tech companies (AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, etc.) because they are widely recognized, heavily traded, and have reliable data availability. Using familiar companies also makes the results easier to interpret and present.
+I chose 30 well-known tech companies (AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, etc.) because they are widely recognized, heavily traded, and have reliable data availability. Using familiar companies also makes the results easier to interpret and present.
 
 ### Why one year of historical data?
 One year provides enough history to calculate meaningful rolling statistics (30-day windows) while keeping the dataset manageable and relevant to current market conditions.
@@ -16,7 +16,7 @@ One year provides enough history to calculate meaningful rolling statistics (30-
 Each row in the dataset represents one stock on one trading day. This is the standard format in data science and is directly compatible with Power BI slicers and filters. Wide format would make it significantly harder to filter by stock or date in the dashboard.
 
 ### Why separate data collection from anomaly detection (two scripts)?
-Downloading data for 30 stocks on every run is slow and unnecessary. By separating the two scripts, we can refresh the data once per day by running `data_collection.py`, and then run `anomaly_detection.py` as many times as needed without re-downloading anything. This mirrors how real production data pipelines are architected.
+Downloading data for 30 stocks on every run is slow and unnecessary. By separating the two scripts, I can refresh the data once per day by running `data_collection.py`, and then run `anomaly_detection.py` as many times as needed without re-downloading anything. This mirrors how real production data pipelines are architected.
 
 ---
 
